@@ -12,20 +12,20 @@ module.exports = {
                 "noto-japan": ["Noto Sans JP", "sans-serif"],
             },
             colors: {
-                primary: "#10b981",
-                background: "#0f172a",
+                primary: "#12D393",
+                background: "#070A13",
             },
             screens: {
                 "2xl": "1320px",
             },
-            keyframes: {
-                blink: {
-                    "0%, 100%": { opacity: "1" },
-                    "50%": { opacity: "0" },
-                },
-            },
             animation: {
-                blink: "blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                type: "type 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+                type: {
+                    "40%, 60%": { left: "100%", width: "0" },
+                    "100%": { left: "0%", width: "100%" },
+                },
             },
         },
     },
