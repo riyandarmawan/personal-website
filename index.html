@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Riyan Darmawan</title>
-        <link rel="stylesheet" href="/src/css/style.css" />
+        <link rel="stylesheet" href="src/css/style.css" />
 
         <!-- fonts google -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,13 +24,11 @@
                 <div
                     class="w-full flex items-center justify-center mb-10 md:w-1/2"
                 >
-                    <div
-                        class="w-36 h-36 lg:w-48 lg:h-48 bg-white rounded-full overflow-hidden"
-                    >
+                    <div class="overflow-hidden">
                         <img
                             src=""
                             alt="profile picture"
-                            class="w-full aspect-square h-full bg-cover bg-top"
+                            class="aspect-square w-36 h-36 rounded-full lg:w-48 lg:h-48 bg-white"
                         />
                     </div>
                 </div>
@@ -53,7 +51,7 @@
                     </h3>
                     <div class="w-full">
                         <a
-                            href="#"
+                            href="#about"
                             class="px-4 py-2 bg-gradient-to-r from-primary to-emerald-600 font-semibold rounded-full mt-4 inline-block hover:opacity-90 active:opacity-80 focus:opacity-80 focus:ring focus:ring-opacity-80 text-base lg:text-lg"
                             >About Me
                         </a>
@@ -63,68 +61,185 @@
             <!-- home section end -->
 
             <!-- about sedction start -->
-            <section id="about" class="pt-28 pb-32 h-svh flex flex-wrap">
+            <section id="about" class="pt-28 pb-32 flex flex-wrap">
                 <div class="w-full">
-                    <h3 class="font-bold text-lg text-center text-primary">
+                    <h3
+                        class="font-bold md:text-xl text-lg lg:text-2xl text-center text-primary"
+                    >
                         About me
                     </h3>
                     <div
-                        class="my-5 bg-slate-800 rounded-md p-4 pb-0 flex flex-col items-center"
+                        class="my-5 bg-slate-800 rounded-md p-4 lg:p-8 pb-0 flex flex-wrap"
                     >
                         <div
-                            class="w-20 h-20 lg:w-32 lg:h-32 bg-white rounded-full overflow-hidden mb-4"
+                            class="overflow-hidden mb-2 w-full flex justify-center md:mt-5 md:w-1/4"
                         >
                             <img
                                 src=""
                                 alt="profile picture"
-                                class="w-full aspect-square h-full bg-cover bg-top"
+                                class="aspect-square w-24 h-24 rounded-full lg:w-36 lg:h-36 bg-white md:w-32 md:h-32 lg:mr-2"
                             />
                         </div>
-                        <p class="text-base text-justify indent-4">
-                            Hello, I'm
-                            <span class="text-primary font-semibold"
-                                >Riyan Darmawan</span
-                            >. I'm come from small town in Indonesia called
-                            Purwakarta. Currently I'm a
-                            <span class="text-primary font-semibold"
-                                >Software Engineer student.</span
+                        <div class="flex flex-col items-center md:w-3/4">
+                            <p
+                                class="text-base text-justify indent-6 md:indent-8 md:text-lg lg:text-xl"
                             >
-                        </p>
-                        <p class="text-base text-justify mt-2 indent-4">
-                            In my free time, I usually learn something new, like
-                            <span class="text-primary font-semibold"
-                                >language or new technology to improe my
-                                development skill</span
-                            >. And yea, of course I also playing social media,
-                            and you can follow me in this social media below.
-                        </p>
-                        <div class="w-36 flex justify-evenly items-center mt-2">
-                            <!-- youtube -->
-                            <a
-                                href="https://www.youtube.com/@riyandarmawan"
-                                target="_blank"
-                                ><span
-                                    class="icon-[mdi--youtube] h-8 w-8 hover:bg-[#FF0000]"
-                                ></span
-                            ></a>
-                            <a
-                                href="https://www.instagram.com/riyandarmawan25/"
-                                target="_blank"
-                                ><span
-                                    class="icon-[mdi--instagram] h-8 w-8 hover:bg-gradient-to-br hover:from-[#405DE6] hover:to-[#E1306C]"
-                                ></span
-                            ></a>
-                            <a
-                                href="https://github.com/riyandarmawan/"
-                                target="_blank"
-                                ><span
-                                    class="icon-[mdi--github] h-8 w-8 hover:bg-black"
-                                ></span
-                            ></a>
+                                Hello, I'm
+                                <span class="text-primary font-semibold"
+                                    >Riyan Darmawan</span
+                                >. I'm come from small town in Indonesia called
+                                Purwakarta. Currently I'm a
+                                <span class="text-primary font-semibold"
+                                    >Software Engineer student.</span
+                                >
+                            </p>
+                            <p
+                                class="text-base text-justify mt-2 indent-6 md:indent-8 md:text-lg lg:text-xl"
+                            >
+                                In my free time, I usually learn something new,
+                                like
+                                <span class="text-primary font-semibold"
+                                    >language or new technology to improe my
+                                    development skill</span
+                                >. And yea, of course I also playing social
+                                media, and you can follow me in this social
+                                media below.
+                            </p>
+                            <div
+                                class="w-44 flex justify-evenly items-center mt-2"
+                            >
+                                <!-- youtube -->
+                                <a
+                                    href="https://www.youtube.com/@riyandarmawan"
+                                    target="_blank"
+                                    ><span
+                                        class="i-[mdi--youtube] h-8 w-8 md:h-10 md:w-10 hover:bg-[#FF0000]"
+                                    ></span
+                                ></a>
+                                <a
+                                    href="https://www.instagram.com/riyandarmawan/"
+                                    target="_blank"
+                                    ><span
+                                        class="i-[mdi--instagram] h-8 w-8 md:h-10 md:w-10 hover:bg-gradient-to-br hover:from-[#405DE6] hover:to-[#E1306C]"
+                                    ></span
+                                ></a>
+                                <a
+                                    href="https://github.com/riyandarmawan/"
+                                    target="_blank"
+                                    ><span
+                                        class="i-[mdi--github] h-8 w-8 md:h-10 md:w-10 hover:bg-black"
+                                    ></span
+                                ></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-full"></div>
+                <div class="w-full">
+                    <div class="w-full">
+                        <h3 class="text-primary text-lg font-semibold md:text-xl lg:text-2xl">
+                            Development Skills
+                        </h3>
+                        <div class="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[vscode-icons--file-type-html] w-14 h-14"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#e34c26] font-bold text-base md:text-lg lg:text-xl">HTML</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Advanced</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[vscode-icons--file-type-css] w-14 h-14"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#2965f1] font-bold text-base md:text-lg lg:text-xl">CSS</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Advanced</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[logos--javascript] w-12 h-12"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#f0db4f] font-bold text-base md:text-lg lg:text-xl">Javascript</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Intermediate</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                 <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[logos--php] w-14 h-14"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#8993be] font-bold text-base md:text-lg lg:text-xl">PHP</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Intermediate</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                 <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[logos--codeigniter-icon] w-12 h-12"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#DD4814] font-bold text-base md:text-lg lg:text-xl">CodeIgniter 4</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Intermediate</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                 <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[logos--laravel] w-12 h-12"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#F05340] font-bold text-base md:text-lg lg:text-xl">Laravel</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Beginner</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                 <div class="w-1/4 flex items-center justify-center">
+                                    <span class="i-[logos--react] w-12 h-12"></span>
+                                </div>
+                                <div class="w-3/4 pl-2">
+                                    <h4 class="text-[#61DBFB] font-bold text-base md:text-lg lg:text-xl">React</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Beginner</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full mt-4">
+                        <h3 class="text-primary text-lg font-semibold">
+                            Language Skills
+                        </h3>
+                        <div class="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <img src="src/img/skills/indonesia.png" alt="Indonesian" class="w-20">
+                                </div>
+                                <div class="w-3/4 pl-4">
+                                    <h4 class="font-bold text-base md:text-lg lg:text-xl">Indonesian</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Fluent</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <img src="src/img/skills/united-kingdom.png" alt="English" class="w-20">
+                                </div>
+                                <div class="w-3/4 pl-4">
+                                    <h4 class="font-bold text-base md:text-lg lg:text-xl">English</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Upper Beginner</h5>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-2 rounded-lg flex flex-wrap">
+                                <div class="w-1/4 flex items-center justify-center">
+                                    <img src="src/img/skills/japan.png" alt="Japanese" class="w-20">
+                                </div>
+                                <div class="w-3/4 pl-4">
+                                    <h4 class="font-bold text-base md:text-lg lg:text-xl">Japanese</h4>
+                                    <h5 class="text-sm md:text-base lg:text-lg mt-1">Beginner</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- about sedction end -->
         </div>
