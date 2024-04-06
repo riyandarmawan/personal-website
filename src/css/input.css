@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .cursor {
-    @apply before:content-['|'] before:bg-background before:w-full before:h-full before:top-0 before:left-0 before:absolute before:animate-type before:text-primary; 
+    @apply before:content-['|'] before:bg-background before:w-full before:h-full before:top-0 before:left-0 before:absolute before:animate-type before:text-primary;
 }

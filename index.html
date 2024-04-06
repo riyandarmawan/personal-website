@@ -15,28 +15,48 @@
         />
     </head>
     <body class="bg-background font-inter text-slate-100">
-        <div class="container">
+        <div class="container lg:px-20">
             <!-- home section start -->
-            <section id="home" class="pb-32 pt-32">
-                <h3 class="text-lg">Hello, I'm</h3>
-                <h1
-                    class="text-2xl text-transparent bg-gradient-to-r from-primary to-emerald-600 bg-clip-text font-bold"
+            <section
+                id="home"
+                class="pt-20 pb-24 flex flex-wrap w-full flex-row-reverse h-svh"
+            >
+                <div
+                    class="w-full flex items-center justify-center mb-10 md:w-1/2"
                 >
-                    Riyan Darmawan.
-                </h1>
-                <h3 class="text-lg mt-2">
-                    I'm a
-                    <span
-                        class="text-primary font-bold relative cursor inline-flex items-center text-xl"
-                        id="profile"
-                        >Web Developer
-                    </span>
-                </h3>
-                <a
-                    href="#"
-                    class="px-4 py-2 bg-gradient-to-r from-primary to-emerald-600 font-semibold rounded-full mt-4 inline-block hover:opacity-90 active:opacity-80 focus:opacity-80 focus:ring focus:ring-opacity-80 text-base"
-                    >About Me</a
-                >
+                    <div
+                        class="w-36 h-36 lg:w-48 lg:h-48 bg-white rounded-full overflow-hidden"
+                    >
+                        <img
+                            src=""
+                            alt="profile picture"
+                            class="w-full aspect-square h-full bg-cover bg-top"
+                        />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center flex-col">
+                    <h3 class="text-lg lg:text-2xl md:text-xl">Hello, My name is</h3>
+                    <h1
+                        class="text-2xl text-transparent bg-gradient-to-r from-primary to-emerald-600 bg-clip-text font-bold lg:text-4xl md:text-3xl"
+                    >
+                        Riyan Darmawan.
+                    </h1>
+                    <h3 class=" md:text-xl text-lg mt-1 lg:text-2xl">
+                        I'm a
+                        <span
+                            class="text-primary font-bold relative cursor inline-flex items-center"
+                            id="profile"
+                            >Web Developer
+                        </span>
+                    </h3>
+                    <div class="w-full">
+                        <a
+                            href="#"
+                            class="px-4 py-2 bg-gradient-to-r from-primary to-emerald-600 font-semibold rounded-full mt-4 inline-block hover:opacity-90 active:opacity-80 focus:opacity-80 focus:ring focus:ring-opacity-80 text-base lg:text-lg"
+                            >About Me
+                        </a>
+                    </div>
+                </div>
             </section>
             <!-- home section end -->
         </div>
