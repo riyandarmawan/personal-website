@@ -10,8 +10,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                inter: ["Inter", "sans-serif"],
-                "noto-japan": ["Noto Sans JP", "sans-serif"],
+                roboto: ["Roboto", "sans-serif"],
             },
             colors: {
                 primary: "#12D393",
