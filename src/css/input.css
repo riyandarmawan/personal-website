@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+    @apply lg:px-20 
+}
+
 .cursor {
-    @apply after:content-["|"] after:animate-blink after:text-[120%]
+    @apply after:content-["|"] after:text-[120%]
 }

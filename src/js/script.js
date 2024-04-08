@@ -3,7 +3,6 @@ const profile = document.querySelector("#profile");
 const profileTexts = [
   "Web Developer",
   "Full-Stack Developer",
-  "Software Engineer Student",
   "Language Learner",
 ];
 
@@ -20,18 +19,48 @@ function autoType(
 
   if (!isDeleting && charIndex < currentWord.length) {
     setTimeout(() => autoType(element, texts, wordIndex, charIndex + 1), 200);
+    element.classList.remove("after:animate-blink");
   } else if (isDeleting && charIndex > 0) {
     setTimeout(
       () => autoType(element, texts, wordIndex, charIndex - 1, isDeleting),
       100,
     );
+    element.classList.remove("after:animate-blink");
   } else {
-    if(isDeleting) {
-        setTimeout(() => autoType(element, texts, (wordIndex + 1) % texts.length, charIndex, !isDeleting), 1000);
+    if (isDeleting) {
+      setTimeout(
+        () =>
+          autoType(
+            element,
+            texts,
+            (wordIndex + 1) % texts.length,
+            charIndex,
+            !isDeleting,
+          ),
+        1000,
+      );
     } else {
-        setTimeout(() => autoType(element, texts, wordIndex, charIndex, !isDeleting), 1000);
+      setTimeout(
+        () => autoType(element, texts, wordIndex, charIndex, !isDeleting),
+        2000,
+      );
     }
+    element.classList.add("after:animate-blink");
   }
 }
-
 autoType(profile, profileTexts);
+
+// toggle hamburger menu
+const hamburger = document.querySelector("#hamburger");
+const nav = document.querySelector("#nav");
+
+document.addEventListener("click", (e) => {
+  if(hamburger.contains(e.target)) {
+    nav.classList.toggle("hidden");
+  }
+  
+  // close menu
+  if(!hamburger.contains(e.target) && !nav.contains(e.target)) {
+    nav.classList.add("hidden");
+  }
+});
