@@ -17,48 +17,51 @@
   <body class="bg-background font-roboto text-slate-100">
     <!-- header start -->
     <header
-      class="fixed left-0 right-0 top-0 z-[9999] bg-slate-800 py-4 shadow-sm shadow-slate-700"
+      class="fixed left-0 right-0 top-0 z-[9999] bg-slate-800 py-4 opacity-80 shadow-sm shadow-slate-700 backdrop-blur-md"
     >
       <div class="container flex items-center justify-between">
         <h3 class="text-lg font-bold text-primary lg:text-xl">
           <a href="#">Riyan Darmawan.</a>
         </h3>
-        <nav class="absolute right-4 lg:right-0 lg:top-0 top-12 hidden lg:block lg:relative" id="nav">
+        <nav
+          class="absolute right-4 top-12 hidden lg:relative lg:right-0 lg:top-0 lg:block"
+          id="nav"
+        >
           <ul
-            class="inline-block overflow-hidden rounded-lg bg-slate-200 text-base font-medium text-slate-900 shadow-lg shadow-slate-700 lg:shadow-none lg:text-slate-100 lg:bg-transparent lg:flex lg:items-center lg:text-lg"
+            class="inline-block overflow-hidden rounded-lg bg-slate-200 text-base font-medium text-slate-900 shadow-lg shadow-slate-700 lg:flex lg:items-center lg:bg-transparent lg:text-lg lg:text-slate-100 lg:shadow-none"
           >
             <li>
               <a
                 href="#home"
-                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary lg:hover:bg-transparent hover:text-white"
+                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary hover:text-white lg:hover:bg-transparent"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#about"
-                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary lg:hover:bg-transparent hover:text-white"
+                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary hover:text-white lg:hover:bg-transparent"
                 >About Me</a
               >
             </li>
             <li>
               <a
                 href="#portfolio"
-                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary lg:hover:bg-transparent hover:text-white"
+                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary hover:text-white lg:hover:bg-transparent"
                 >Portfolio</a
               >
             </li>
             <li>
               <a
-                href="#blog"
-                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary lg:hover:bg-transparent hover:text-white"
-                >Blog</a
+                href="#blogs"
+                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary hover:text-white lg:hover:bg-transparent"
+                >Blogs</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary lg:hover:bg-transparent hover:text-white"
+                class="inline-block w-full py-1 pl-4 pr-8 hover:bg-primary hover:text-white lg:hover:bg-transparent"
                 >Contact Me</a
               >
             </li>
@@ -124,7 +127,7 @@
             About me
           </h3>
           <div
-            class="my-5 flex flex-wrap rounded-md bg-slate-800 p-4 pb-0 lg:p-8"
+            class="mb-6 mt-8 flex flex-wrap rounded-md bg-slate-800 p-4 pb-0 lg:p-8"
           >
             <div class="w-full md:w-1/2 md:px-4">
               <h3 class="text-lg font-semibold md:text-xl lg:text-2xl">
@@ -149,7 +152,7 @@
                 or new technology about Web Development. I also play social
                 media that you can follow me below.
               </p>
-              <div class="mt-4 flex w-full gap-4 justify-center">
+              <div class="mt-4 flex w-full justify-center gap-4">
                 <a href="https://youtube.com/@riyandarmawan" target="_blank">
                   <span
                     class="i-[mdi--youtube] h-8 w-8 hover:text-[#FF0000] md:h-10 md:w-10"
@@ -338,21 +341,171 @@
 
       <!-- Portfolio section start -->
       <section id="portfolio" class="pb-32 pt-28">
-        <h3 class="text-center text-lg font-bold text-primary md:text-xl lg:text-2xl">Portfolio</h3>
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 mt-8 gap-8">
-          <div class="p-2 bg-slate-700 rounded-lg shadow-lg shadow-slate-800">
-            <img src="src/img/portfolio/mycoffee.png" alt="MyCoffee site" class="aspect-video bg-cover bg-center">
+        <h3
+          class="text-center text-lg font-bold text-primary md:text-xl lg:text-2xl"
+        >
+          Portfolio
+        </h3>
+        <div class="mt-8 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div
+            class="overflow-hidden rounded-lg bg-slate-700 p-2 shadow-lg shadow-slate-800"
+          >
+            <img
+              src="src/img/portfolio/mycoffee.png"
+              alt="MyCoffee site"
+              class="aspect-video bg-cover bg-center"
+            />
             <div class="mt-4">
-              <h3 class="font-semibold text-lg md:text-xl lg:text-2xl">MyCoffee</h3>
-              <p class="text-base mt-2 font-medium md:text-lg lg:text-xl">Website for you to give information about MyCoffee's products, news, etc.</p>
-              <div class="flex justify-end items-center gap-2 mt-2">
-                <a href="https://github.com/riyandarmawan/company-profile"><span class="i-[mdi--github] w-7 h-7 hover:text-black"></span></a>
+              <h3 class="line-clamp-2 min-h-10 text-lg font-semibold md:text-xl lg:text-2xl">
+                MyCoffee
+              </h3>
+              <p class="line-clamp-2 min-h-14  text-slate-200 mt-2 text-base font-medium md:text-lg lg:text-xl">
+                Website for you to give information about MyCoffee's products,
+                news, etc.
+              </p>
+              <div class="mt-2 flex items-center justify-end gap-2">
+                <a href="https://github.com/riyandarmawan/company-profile"
+                  ><span class="i-[mdi--github] h-7 w-7 hover:text-black"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden rounded-lg bg-slate-700 p-2 shadow-lg shadow-slate-800"
+          >
+            <img
+              src="src/img/portfolio/portfolio-tailwindcss.png"
+              alt="MyCoffee site"
+              class="aspect-video bg-contain bg-center"
+            />
+            <div class="mt-4">
+              <h3 class="line-clamp-2 min-h-10 text-lg font-semibold md:text-xl lg:text-2xl">
+                Portfolio using TailwindCSS
+              </h3>
+              <p class="line-clamp-2 min-h-14  text-slate-200 mt-2 text-base font-medium md:text-lg lg:text-xl">
+                Try to create Portfoilo website using Tailwind CSS
+              </p>
+              <div class="mt-2 flex items-center justify-end gap-2">
+                <a href="https://github.com/riyandarmawan/portfolio-tailwindcss"
+                  ><span class="i-[mdi--github] h-7 w-7 hover:text-black"></span
+                ></a>
+                <a href="https://riyandarmawan.github.io/portfolio-tailwindcss"
+                  ><span class="i-[material-symbols--app-shortcut] h-7 w-7 hover:text-black"></span
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Portfolio section end -->
+
+      <!-- Blogs section start -->
+      <section id="blogs" class="pb-32 pt-28">
+        <h3
+          class="text-center text-lg font-bold text-primary md:text-xl lg:text-2xl"
+        >
+          Blogs
+        </h3>
+        <div class="mt-8 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div
+            class="overflow-hidden rounded-lg bg-slate-700 shadow-lg shadow-slate-800"
+          >
+            <img
+              src="src/img/blogs/coding.jpg"
+              alt="Coding"
+              class="aspect-video bg-cover bg-center"
+            />
+            <div class="px-4 py-2">
+              <p class="mb-2 text-sm font-normal text-slate-200 lg:text-base">
+                Monday, April 8th 2024
+              </p>
+              <h3
+                class="line-clamp-2 min-h-14 text-lg font-semibold md:text-xl lg:text-2xl"
+              >
+                Is Progamming worth it to learn?
+              </h3>
+              <p class="line-clamp-2 min-h-10 text-base md:text-lg lg:text-xl">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                repellat molestias a ipsum deleniti adipisci deserunt velit ab
+                saepe commodi?
+              </p>
+              <div class="mt-4 flex w-full justify-center">
+                <a
+                  href="#"
+                  class="mb-2 block rounded-lg bg-primary px-4 py-2 text-base font-semibold shadow hover:opacity-80 lg:text-lg"
+                  >Read more here</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden rounded-lg bg-slate-700 shadow-lg shadow-slate-800"
+          >
+            <img
+              src="src/img/blogs/english.jpg"
+              alt="English"
+              class="aspect-video bg-cover bg-center"
+            />
+            <div class="px-4 py-2">
+              <p class="mb-2 text-sm font-normal text-slate-200 lg:text-base">
+                Sunday, April 7th 2024
+              </p>
+              <h3
+                class="line-clamp-2 min-h-14 text-lg font-semibold md:text-xl lg:text-2xl"
+              >
+                Is English important in Progamming?
+              </h3>
+              <p class="line-clamp-2 min-h-10 text-base md:text-lg lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                rem cumque expedita vel reiciendis temporibus est voluptates,
+                vitae eligendi optio?
+              </p>
+              <div class="mt-4 flex w-full justify-center">
+                <a
+                  href="#"
+                  class="block rounded-lg bg-primary px-4 py-2 text-base font-semibold shadow hover:opacity-80 lg:text-lg"
+                  >Read more here</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="mt-8 block text-center text-base font-semibold hover:text-primary lg:text-lg"
+          >Click here to get more blogs</a
+        >
+      </section>
+      <!-- Blogs section end -->
+
+      <!-- contact section start -->
+      <section id="contact" class="pb-32 pt-28">
+        <h3
+          class="text-center text-lg font-bold text-primary md:text-xl lg:text-2xl"
+        >
+          Contact Me
+        </h3>
+        <div class="mt-8 p-4 bg-slate-700 rounded-md lg:max-w-3xl mx-auto">
+          <form action="">
+            <div>
+              <label for="name" class="text-primary font-semibold text-base md:text-lg lg:text-xl cursor-pointer">Name</label>
+              <input type="text" name="name" id="name" class="block focus:outline-none mt-2 w-full p-2 rounded text-black font-normal focus:ring focus:ring-primary">
+            </div>
+            <div class="mt-4">
+              <label for="email" class="text-primary font-semibold text-base md:text-lg lg:text-xl cursor-pointer">Email</label>
+              <input type="text" name="email" id="email" class="block focus:outline-none mt-2 w-full p-2 rounded text-black font-normal focus:ring focus:ring-primary">
+            </div>
+            <div class="mt-4">
+              <label for="message" class="text-primary font-semibold text-base md:text-lg lg:text-xl cursor-pointer">Message</label>
+              <textarea type="text" name="message" id="message" class="block focus:outline-none mt-2 w-full p-2 rounded text-black font-normal focus:ring focus:ring-primary resize-none font-roboto" rows="4"></textarea>
+            </div>
+            <div class="mt-6 flex justify-center">
+              <button class="bg-primary px-4 py-2 shadow-lg shadow-slate-800 rounded-full hover:opacity-90 active:opacity-85 focus:opacity-80 font-bold text-base md:text-lg lg:text-xl">Contact</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- contact section end -->
     </div>
 
     <script src="src/js/script.js"></script>

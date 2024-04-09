@@ -13,7 +13,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       colors: {
-        primary: "#12D393",
+        primary: "#10b981",
         background: "#070A13",
       },
       screens: {
